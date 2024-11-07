@@ -1,0 +1,208 @@
+.container {
+  max-width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.input {
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 100px;
+  border: 1px solid #ccc;
+  align-self: center;
+  width: 30%;
+  font-family: "pltxt";
+  font-weight: bold;
+}
+
+.input::placeholder {
+  font-family: "pltxt";
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4a2781;
+  color: white;
+  border: none;
+  align-self: center;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+  font-family: "Myfont";
+}
+
+.weatherInfo {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #0d0d0d;
+  width: 100%;
+  height: 100%;
+}
+
+.infocontainer {
+  width: 95%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  font-family: "Courier New", Courier, monospace;
+  -webkit-box-shadow: 0px 0px 29px -2px rgba(0, 0, 0, 0.77);
+  -moz-box-shadow: 0px 0px 29px -2px rgba(0, 0, 0, 0.77);
+  box-shadow: 0px 0px 29px -2px rgba(0, 0, 0, 0.77);
+}
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.city {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-family: "Myfont";
+}
+
+.weathertype,
+.temperature,
+.humidity,
+.wind,
+.pressure,
+.sunrise,
+.sunset,
+.clouds,
+.country {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: "Myfont";
+}
+
+.weathertype > h1,
+.temperature > h1,
+.humidity > h1,
+.wind > h1,
+.pressure > h1,
+.sunrise > h1,
+.sunset > h1,
+.clouds > h1,
+.country > h1 {
+  color: #4a2781;
+  -webkit-text-stroke-width: 0.2px;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-family: "Myfont";
+}
+
+.temperature,
+.humidity,
+.wind,
+.pressure,
+.sunrise,
+.sunset,
+.clouds {
+  font-family: "Number";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.weathertype,
+.country {
+  font-family: "comptext";
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: "Myfont";
+  src: url(../src/ForestTrophyTextured.otf);
+}
+
+@font-face {
+  font-family: "Number";
+  src: url(../src/frozencrystalpunch.ttf);
+}
+
+@font-face {
+  font-family: "comptext";
+  src: url(../src/CocogooseProBold.ttf);
+}
+
+@font-face {
+  font-family: "pltxt";
+  src: url(../src/Sketch_Block.ttf);
+}
+
+@media screen and (max-width: 400px) {
+  .input {
+    width: 90%;
+    margin-left: 0px;
+  }
+
+  .infocontainer {
+    width: 85%;
+    height: auto;
+  }
+
+  .details {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .weathertype > h1,
+  .temperature > h1,
+  .humidity > h1,
+  .wind > h1,
+  .pressure > h1,
+  .sunrise > h1,
+  .sunset > h1,
+  .clouds > h1,
+  .country > h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .weathertype > h1,
+  .temperature > h1,
+  .humidity > h1,
+  .wind > h1,
+  .pressure > h1,
+  .sunrise > h1,
+  .sunset > h1,
+  .clouds > h1,
+  .country > h1 {
+    font-size: 30px;
+  }
+
+  .details{
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .weathertype,
+  .temperature,
+  .humidity,
+  .wind,
+  .pressure,
+  .sunrise,
+  .sunset,
+  .clouds,
+  .country {
+    font-size: 35px;
+  }
+
+
+}
